@@ -1,0 +1,5 @@
+type Commandes struct {
+    Id int64
+    Etat_Pompe int
+    DateTime_Pompe string
+}
