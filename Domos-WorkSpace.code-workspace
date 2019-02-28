@@ -1,0 +1,9 @@
+{
+	"folders": [],
+	"settings": {
+		"terminal.integrated.env.osx": {
+			"PATH": "/Users/alexisolivan/.platformio/penv/bin:/Users/alexisolivan/.platformio/penv:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/X11/bin",
+			"PLATFORMIO_CALLER": "vscode"
+		}
+	}
+}

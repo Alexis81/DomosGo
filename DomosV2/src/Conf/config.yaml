@@ -1,0 +1,20 @@
+Sondes:
+  air: 28-0417715c50ff 
+  mqttair: Domos.poolhouse.localTechnique.Air_Exterieur
+  airlocal: 28-04177106f9ff 
+  mqttairlocal: Domos.poolhouse.localTechnique.Air_Local
+  eau: 28-01183000afff 
+  mqtteau: Domos.poolhouse.localTechnique.Eau_Piscine
+  port: 1000
+
+Netatmo:
+  clientid: 5891ee6569f740fc108b47be
+  clientsecret: A6FiJSLNlCZWGMnZZZqeZoHQnmJVAuNYGQAoE1iXizuNd
+  username: alexisolivan@me.com
+  password: Zounette_01
+  url: /statsNetatmo
+  port: 1003
+
+Raspberry:
+  url: /stats
+  port: 1001
