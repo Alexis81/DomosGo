@@ -164,15 +164,18 @@ func pushbulletSend(title string, body string) {
 // Entrées : message string
 // Sorties :
 //---------------------------------------------------------------------------
-func Telegram(message string, telegramToken string, telegramId int) {
+func Telegram(message string, telegramToken string, telegramId int, teleinfoActif bool) {
 
-	bot, err := tgbotapi.NewBotAPI(telegramToken)
-	gestionErr("Telegram : problème de Token", err)
+	if telegramActif {
 
-	msg := tgbotapi.NewMessage(int64(telegramId), message)
-	msg.ParseMode = "markdown"
-	_, err = bot.Send(msg)
-	gestionErr("Telegram : problème lors de l'envoi du message", err)
+		bot, err := tgbotapi.NewBotAPI(telegramToken)
+		gestionErr("Telegram : problème de Token", err)
+
+		msg := tgbotapi.NewMessage(int64(telegramId), message)
+		msg.ParseMode = "markdown"
+		_, err = bot.Send(msg)
+		gestionErr("Telegram : problème lors de l'envoi du message", err)
+	}
 }
 
 // Ipadresse : Trouve adresse IP du Raspberry
